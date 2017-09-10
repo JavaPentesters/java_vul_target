@@ -1,0 +1,25 @@
+
+1 docker images
+
+2 docker ps -a -l
+
+
+3 docker build -t pez1420/javavul:test --rm=true
+-t选择指定生成镜像的用户名，仓库名和tag
+--rm=true指定在生成镜像过程中删除中间产生的临时容器。
+
+4 docker images pez1420/javavul
+查看新产生的镜像
+
+5 运行镜像
+docker run -d -p 8090:8080 5207
+-p指定主机80端口与容器8080端口进行绑定
+-d 指定容器运行后与当前tty分离，后台运行
+5207是镜像的ID前4位。
+
+6 停用全部运行中的容器
+docker stop $(docker ps -q)
+
+7 删除所有容器
+docker rm $(docker ps -aq)
+
