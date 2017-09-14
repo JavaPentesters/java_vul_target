@@ -1,6 +1,12 @@
 
 设置国内docker image 仓库地址
 
+cat /etc/docker/daemon.json 
+{
+"registry-mirrors": ["https://registry.docker-cn.com"]
+}
+
+
 0 docker pull mysql  
 搜索镜像
 
