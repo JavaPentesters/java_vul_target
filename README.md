@@ -7,9 +7,10 @@ cat /etc/docker/daemon.json
 }
 
 
-0 docker pull mysql  
-ËÑË÷¾µÏñ
 
+0 docker pull mysql  ËÑË÷¾µÏñ
+  docker info
+  docker stats  
 1 docker images
 
 2 docker ps -a -l
