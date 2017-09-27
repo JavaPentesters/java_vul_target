@@ -8,7 +8,9 @@ cat /etc/docker/daemon.json
 
 
 
-0 docker pull mysql  ËÑË÷¾µÏñ
+0 ËÑË÷¾µÏñ
+  docker search
+  docker pull mysql  
   docker info
   docker stats  
 1 docker images
